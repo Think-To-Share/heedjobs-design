@@ -45,7 +45,7 @@
 <!-- end heading-section -->
 
 <!-- hero section -->
-<section class="hero-section">
+<section class="hero-section mb-5">
     <div class="container h-100">
         <div class="row h-100 align-items-end justify-content-center">
             <div class="col-md-10">
@@ -62,7 +62,7 @@
 
     <!--Start About Us -->
 
-    <section class="about-sec">
+    <section class="about-sec pt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
@@ -205,7 +205,69 @@
 <section class="success-sec">
     <div class="container">
         <h2 class="success-heading">SUCCESS STORIES</h2>
-        <p class="success-heading-text">Contrary to popular belief, Lorem Ipsum are going to use a passage of</p>
+        <p class="success-heading-text mb-5">Contrary to popular belief, Lorem Ipsum are going to use a passage of</p>
+        <div class="row gy-5">
+            <div class="col-md-4">
+                <div class="card success-card">
+                    <img src="./src/images/card.jpg" class="card-img-top success-img mb-5" alt="">
+                    <div class="card-body">
+                    <p class="card-text success-text">Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief, Lorem Ipsum is not simply random text
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card success-card">
+                    <img src="./src/images/card.jpg" class="card-img-top success-img mb-5" alt="">
+                    <div class="card-body">
+                    <p class="card-text success-text">Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief, Lorem Ipsum is not simply random text
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card success-card">
+                    <img src="./src/images/card.jpg" class="card-img-top success-img mb-5" alt="">
+                    <div class="card-body">
+                    <p class="card-text success-text">Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief, Lorem Ipsum is not simply random text
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card success-card">
+                    <img src="./src/images/card.jpg" class="card-img-top success-img mb-5" alt="">
+                    <div class="card-body">
+                    <p class="card-text success-text">Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief, Lorem Ipsum is not simply random text
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card success-card">
+                    <img src="./src/images/card.jpg" class="card-img-top success-img mb-5" alt="">
+                    <div class="card-body">
+                    <p class="card-text success-text">Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief, Lorem Ipsum is not simply random text
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card success-card">
+                    <img src="./src/images/card.jpg" class="card-img-top success-img mb-5" alt="">
+                    <div class="card-body">
+                    <p class="card-text success-text">Contrary to popular belief, Lorem Ipsum is not simply random textContrary to popular belief, Lorem Ipsum is not simply random text
+                    </p>
+                    <a href="#" class="read-more">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- end SUCCESS STORIES section -->
@@ -225,9 +287,36 @@
         <div class="container"> 
             <div class="row">
                 <div class="col-md-12">
+                    <!-- Modal -->
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Contact Now</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              <form>
+                                <div class="mb-3">
+                                  <label for="recipient-name" class="col-form-label">Name</label>
+                                  <input type="text" class="form-control" id="recipient-name">
+                                </div>
+                                <div class="mb-3">
+                                  <label for="message-text" class="col-form-label">Message:</label>
+                                  <textarea class="form-control" id="message-text"></textarea>
+                                </div>
+                              </form>
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                              <button type="button" class="btn btn-success">Send message</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
                     <h2 class="contact-heading">CONTACT US</h2>
                     <p class="contact-heading-text">It is a long established fact that a reader </p>
-                    <a class="icon" href="#"><i class="fas fa-envelope-square"></i></a>
+                    <a class="icon" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"><i class="fas fa-envelope-square"></i></a>
                 </div>
             </div>
         </div>
@@ -384,5 +473,13 @@
 <!-- end copyright section -->
 
     <script src="./dist/js/app.js"></script>
+    <script>
+        var myModal = document.getElementById('myModal')
+        var myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        myInput.focus()
+        })
+    </script>
 </body>
 </html>

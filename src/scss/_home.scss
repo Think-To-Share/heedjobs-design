@@ -291,6 +291,30 @@
         font-family:$primary-font;
         font-weight: 300;
     }
+    .success-card{
+        text-align: center;
+        margin-bottom: 7%;
+        cursor: pointer;
+        .success-img{
+
+        }
+        .success-text{
+            // color: #070202;
+            font-family: $primary-font;
+        }
+        .read-more{
+            text-decoration: none;
+            color: #070202;
+        }
+        &:hover{
+            color:#fff !important;
+            background-color: $primary-color;
+            transform: translateY(-10px);
+            box-shadow: 6px 6px 18px 3px #f3f3f3;
+            transition: all ease-in-out 0.4s;
+        }
+    }
+    
 }
 //end SUCCESS STORIES-sec
 
