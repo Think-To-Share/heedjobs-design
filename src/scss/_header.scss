@@ -1,0 +1,63 @@
+// .heading-section{
+//         padding-top: 20px;
+//         padding-bottom: 20px;
+//         .header-main{
+//             ul {
+//                 list-style-type: none;
+//                 padding: 0;
+//                 margin: 0;
+//                 display: flex;
+//                 justify-content: center;
+//                 li {
+//                     padding: 0 15px;
+//                     a{
+//                         text-decoration: none;
+//                         font-size: 0.9em;
+//                         color:#222222;
+//                         font-weight:500;
+//                         position: relative;
+//                         font-family:$primary-font;
+//                     }
+//                     }
+//                     // text-transform: uppercase;
+                 
+//             }
+//         }
+//     }
+.main-heading-sec{
+    .logo-container{
+        width:100%;
+        .logo{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 180px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.hero-section{
+    height: 700px;
+    background-image: url(../images/heropicture.jpg);
+    background-size: cover;
+    .hero-heading{
+        color: #fff;
+        font-family: $primary-font;
+        font-weight: 700;
+        text-align: center;
+    }
+    .btn {
+        padding: 10px 30px;
+        background-color: $primary-color;
+        border-radius: 8px;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        margin: 20px 0;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            border-color: #555555;
+        }
+    }
+}
