@@ -77,6 +77,10 @@
             font-size: 3em;
             z-index:2;
             color: $primary-color;
+            display: none;
+            @media(min-width:768px){
+                display: block;
+                }
         }
     }
     .user-img-container{
@@ -86,11 +90,16 @@
         border-radius: 50%;
         overflow: hidden;
         position: relative;
+        margin:0 auto;
+        @media(min-width:768px){
+            margin:0;
+            }
         .testimonials-img{
             position: absolute;
             top:50%;
             left:50%;
             transform: translate(-50%,-50%);
+            max-width: initial;
         }
     }
     .testimonials-heading-text {
@@ -296,9 +305,6 @@
         text-align: center;
         margin-bottom: 7%;
         cursor: pointer;
-        .success-img{
-
-        }
         .success-text{
             // color: #070202;
             font-family: $primary-font;
@@ -404,6 +410,11 @@
         .logoimg{
             display: flex;
             margin: 0 auto;
+            width: 40px;
+            fill: #fff;
+            @media(min-width:768px){
+                width: 50%;
+            }
         }
     }
 }
