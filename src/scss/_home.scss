@@ -399,6 +399,67 @@
             }
         }
     }
+    .modal-dialog{
+        .form-header{
+            text-align: center;
+            font-weight: 700;
+            color: $primary-color;
+            text-transform: uppercase;
+            padding-top: 50px;
+            font-family:$primary-font;
+            font-size: 20px;
+            @media(min-width:768px){
+            font-size: 2rem;
+            }
+        }
+
+        input{
+            width: 100%;
+            border: 1px solid#c0272d;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 12px 12px;
+            margin-bottom: 20px;
+            &::placeholder{
+                color: #c0272d;
+                font-family: 'Poppins', sans-serif;
+            }
+            &:focus-visible{
+                outline: none;
+            }
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid#c0272d;
+            background-color: #fff;
+            border-radius: 5px;
+            padding: 12px 12px;
+            margin-bottom: 20px;
+            &::placeholder{
+                color: #c0272d;
+                font-family: 'Poppins', sans-serif;
+            }
+            &:focus-visible{
+                outline: none;
+            }
+        }
+        .btn-cross
+        {
+            background-color: #fff;
+        }
+        button{
+            padding: 10px 50px;
+            background-color: $primary-color;
+            border-radius: 8px;
+            color: #fff;
+            font-family: 'Poppins', sans-serif;
+            &:hover{
+                background-color: #fff;
+                color: #000;
+                border-color: #555555;
+            }
+        }
+    }
 }
 //end contact-sec
 

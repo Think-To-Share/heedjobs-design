@@ -1,29 +1,33 @@
-// .heading-section{
-//         padding-top: 20px;
-//         padding-bottom: 20px;
-//         .header-main{
-//             ul {
-//                 list-style-type: none;
-//                 padding: 0;
-//                 margin: 0;
-//                 display: flex;
-//                 justify-content: center;
-//                 li {
-//                     padding: 0 15px;
-//                     a{
-//                         text-decoration: none;
-//                         font-size: 0.9em;
-//                         color:#222222;
-//                         font-weight:500;
-//                         position: relative;
-//                         font-family:$primary-font;
-//                     }
-//                     }
-//                     // text-transform: uppercase;
+.heading-section{
+        padding-top: 20px;
+        padding-bottom: 20px;
+        display: none;
+        .header-main{
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                li {
+                    padding: 0 15px;
+                    a{
+                        text-decoration: none;
+                        font-size: 0.9em;
+                        color:#222222;
+                        font-weight:500;
+                        position: relative;
+                        font-family:$primary-font;
+                    }
+                    }
+                    // text-transform: uppercase;
                  
-//             }
-//         }
-//     }
+            }
+        }
+        @media(min-width:992px){
+            display: block;
+        }
+    }
 .main-heading-sec{
     .logo-container{
         width:100%;
