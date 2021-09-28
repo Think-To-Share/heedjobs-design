@@ -321,6 +321,19 @@
             transition: all ease-in-out 0.4s;
         }
     }
+    .btn {
+        padding: 10px 50px;
+        background-color: $secondary-color;
+        border-radius: 8px;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        margin: 40px 0;
+        &:hover{
+            background-color: #fff;
+            color: #000;
+            border-color: #555555;
+        }
+    }
     
 }
 //end SUCCESS STORIES-sec
