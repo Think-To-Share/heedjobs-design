@@ -1,3 +1,13 @@
+.menu-container{
+    background-color: #fff;
+    left: 0;
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: -3px -3px 10px 0px #86858a66;
+}
 .heading-section{
         padding-top: 20px;
         padding-bottom: 20px;
@@ -29,6 +39,7 @@
         }
         @media(min-width:992px){
             display: block;
+            
         }
     }
 .main-heading-sec{
