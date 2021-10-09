@@ -5,6 +5,7 @@ if(document.querySelector(".industries-sec")){
         items:2,
         nav:false,
         controls:false,
+        autoplayTimeout:1000,
         responsive: {
             768:{
               items: 3,
@@ -20,6 +21,7 @@ if(document.querySelector(".success-section")){
         items:2,
         nav:false,
         controls:false,
+        autoplayTimeout:1000,
         responsive: {
             768:{
               items:5,
